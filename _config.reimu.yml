@@ -30,3 +30,23 @@ giscus:
   inputPosition: "bottom"
   theme: "light"
   lang: "zh-CN"
+# 代码块复制提示配置（放在文件最底部，顶格写）
+clipboard:
+  success:
+    en: Copy successfully (*^▽^*)
+    zh-CN: 复制成功 ✅  # 自定义中文提示，改这里就行
+    zh-TW: 複製成功 (*^▽^*)
+    ja: コピー成功 (*^▽^*)
+  fail:
+    en: Copy failed (ﾟ⊿ﾟ)ﾂ
+    zh-CN: 复制失败 ❌  # 自定义中文失败提示
+    zh-TW: 複製失敗 (ﾟ⊿ﾟ)ﾂ
+    ja: コピー失敗 (ﾟ⊿ﾟ)ﾂ
+  copyright:
+    enable: false
+    count: 50
+    license_type: by-nc-sa
+
+# 代码块展开状态配置（可选，也放最底部）
+code_block:
+  expand: true
