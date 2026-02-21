@@ -1,0 +1,5 @@
+# 本地搜索功能开关（开启后自动显示导航栏放大镜图标）
+generator_search:
+ enable: true
+ per_page: 10
+ content: true
