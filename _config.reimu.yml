@@ -1,33 +1,32 @@
-# 本地搜索功能配置（之前已启用的功能，保留）
+# Reimu主题核心配置（v1.12.0兼容版）
+# 基础信息
+avatar: "avatar.jpg"
+author: 小韩
+
+# 本地搜索功能
 generator_search:
   enable: true
   per_page: 10
   content: true
 
-# 头像配置（之前已设置的内容，保留）
-avatar: "avatar.jpg"
-
-# 博客作者昵称（之前已设置的内容，保留）
-author: 小韩
-
-# 评论功能总开关+完整配置（格式严格符合YAML规范，无缩进错误）
+# 评论系统全局配置（必须和giscus同级，缩进0）
 comment:
   enable: true
   title:
     zh-CN: 说些什么吧！
-  default: giscus
-  # Giscus评论系统详细配置
-  giscus:
-    enable: true
-    # 下面4项替换成你自己的参数，其他内容不用改
-    repo: "XiaoHanzuishuai/hexo"
-    repo-id: "R_kgDORU0QPA"
-    category: "Announcements"
-    category-id: "DIC_kwDORU0QPM4C25Wf"
-    # 下面是固定配置，不用修改
-    mapping: "pathname"
-    reactions-enabled: true
-    emit-metadata: false
-    input-position: "bottom"
-    theme: "light"
-    lang: "zh-CN"
+  default: giscus  # 强制指定默认评论系统为giscus
+
+# Giscus评论配置（和comment同级，缩进0，所有子项缩进2）
+giscus:
+  enable: true
+  repo: "XiaoHanzuishuai/hexo"
+  repoId: "R_kgDORU0QPA"
+  category: "Announcements"
+  categoryId: "DIC_kwDORU0QPM4C25Wf"
+  mapping: "pathname"
+  strict: 0
+  reactionsEnabled: 1
+  emitMetadata: 0
+  inputPosition: "bottom"
+  theme: "light"
+  lang: "zh-CN"
