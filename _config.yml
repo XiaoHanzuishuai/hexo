@@ -3,12 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 小韩
 subtitle: ''
-description: ''
+description: '这是一个简单分享的博客'
 keywords:
-author: John Doe
-language: en
+author: 小韩
 timezone: ''
 
 # URL
@@ -97,9 +96,20 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: reimu
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+# hexo default is empty, change to exact languages, and add xx.yml under your theme languages dir.
+language: [zh-CN, en]
+# config hexo-generator-i18n option (optional, this is default option)
+i18n:
+  type: [page, post]
+  generator: [archive, category, tag, index]
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
