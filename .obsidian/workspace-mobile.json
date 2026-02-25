@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hexo/source/_posts/测试.md",
+                "file": "source/_posts/测试.md",
                 "mode": "source",
                 "source": false
               },
@@ -180,8 +180,9 @@
   },
   "active": "fb6e7ba3327a49c8",
   "lastOpenFiles": [
+    "source/_posts/hello-world.md",
+    "source/_posts/测试.md",
     "未命名.canvas",
-    "hexo/source/_posts/测试.md",
     "hexo/source/_posts/cloudflare部署Hexo.md",
     "未命名",
     "未命名.md"
