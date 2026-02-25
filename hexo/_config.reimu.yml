@@ -1,0 +1,52 @@
+# Reimu主题核心配置（v1.12.0兼容版）
+# 基础信息
+avatar: "avatar.jpg"
+author: 小韩
+
+# 本地搜索功能
+generator_search:
+  enable: true
+  per_page: 10
+  content: true
+
+# 评论系统全局配置（必须和giscus同级，缩进0）
+comment:
+  enable: true
+  title:
+    zh-CN: 说些什么吧！
+  default: giscus  # 强制指定默认评论系统为giscus
+
+# Giscus评论配置（和comment同级，缩进0，所有子项缩进2）
+giscus:
+  enable: true
+  repo: "XiaoHanzuishuai/hexo"
+  repoId: "R_kgDORU0QPA"
+  category: "Announcements"
+  categoryId: "DIC_kwDORU0QPM4C25Wf"
+  mapping: "pathname"
+  strict: 0
+  reactionsEnabled: 1
+  emitMetadata: 0
+  inputPosition: "bottom"
+  theme: "light"
+  lang: "zh-CN"
+# 代码块复制提示配置（放在文件最底部，顶格写）
+clipboard:
+  success:
+    en: Copy successfully (*^▽^*)
+    zh-CN: 复制成功 ✅  # 自定义中文提示，改这里就行
+    zh-TW: 複製成功 (*^▽^*)
+    ja: コピー成功 (*^▽^*)
+  fail:
+    en: Copy failed (ﾟ⊿ﾟ)ﾂ
+    zh-CN: 复制失败 ❌  # 自定义中文失败提示
+    zh-TW: 複製失敗 (ﾟ⊿ﾟ)ﾂ
+    ja: コピー失敗 (ﾟ⊿ﾟ)ﾂ
+  copyright:
+    enable: false
+    count: 50
+    license_type: by-nc-sa
+
+# 代码块展开状态配置（可选，也放最底部）
+code_block:
+  expand: true
